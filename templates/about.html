@@ -1,0 +1,39 @@
+<!-- templates/about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - My Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('about') }}">About Me</a>
+        <a href="{{ url_for('projects') }}">Projects</a>
+        <a href="{{ url_for('contact') }}">Contact</a>
+    </nav>
+
+    <!-- About  -->
+    <div class="about">
+        <h2>My Background Education</h2>
+        <p><strong>University:</strong> Padjadjaran University, Indonesia</p>
+        <p><strong>Program:</strong> Bachelor of Electrical Engineering</p>
+        <p><strong>Current Semester:</strong> 2nd Semester</p>
+        <p><strong>High School:</strong> SMAN 1 Kebumen</p>
+        
+        <h2>Some Fun During Free Time</h2>
+            <p>My childhood was colored with crayons and painting. Tanpa disangka, sekolah saya pernah mendapatkan juara pertama untuk lukisan yang saya wakili. Coloring is healing!</p>
+            <img src="{{ url_for('static', filename='images/lukis4.jpg') }}" alt="Foto 4">
+            <img src="{{ url_for('static', filename='images/lukis1.jpg') }}" alt="Foto 1">
+            <img src="{{ url_for('static', filename='images/lukis2.jpg') }}" alt="Foto 2">                <img src="{{ url_for('static', filename='images/lukis3.jpg') }}" alt="Foto 3">
+             
+        </div>
+
+
+</body>
+</html>

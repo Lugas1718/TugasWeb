@@ -1,0 +1,240 @@
+/* BAGIAN UTAMA HOME */
+.home {
+    background-color: #ffffff; /* Warna latar belakang Home */
+    min-height: 100vh; /* Tinggi Home */
+    display: flex;
+    justify-content: center; /* Pusatkan isi horizontal */
+    align-items: center; /* Pusatkan isi vertikal */
+    text-align: left; /* Teks rata kiri */
+}
+
+/* KONTEN HOME (Tulisan + Gambar) */
+.home-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Jarak maksimal antara tulisan dan gambar */
+    width: 80%; /* Lebar konten */
+    max-width: 1200px; /* Maksimal lebar */
+}
+
+/* TULISAN DI HOME */
+.home-text {
+    flex: 1; /* Ruang untuk tulisan */
+    padding-right: 20px; /* Jarak kanan */
+}
+
+.home-text h1 {
+    color: #4237D1;
+    font-size: 50px; /* Ukuran judul */
+}
+
+.home-text p {
+    color: #000000;
+    font-size: 20px; /* Ukuran paragraf */
+}
+
+/* GAMBAR DI HOME */
+.home-image {
+    flex: 1; /* Ruang untuk gambar */
+    display: flex;
+    justify-content: center; /* Gambar dipusatkan */
+}
+
+.home-image img {
+    max-width: 100%; /* Gambar tidak lebih lebar dari kontainer */
+    height: auto; /* Menjaga proporsi gambar */
+    border-radius: 10px; /* Sudut melengkung */
+}
+
+/* style UMUM HALAMAN */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Warna latar belakang */
+    color: #000000; /* Warna teks */
+}
+
+/* NAVIGASI (MENU) */
+nav {
+    background-color: #4237D1; /* Warna latar belakang menu */
+    padding: 10px 0;
+    text-align: left;
+}
+
+nav a {
+    color: #fff; /* Warna teks menu */
+    text-decoration: none;
+    padding: 5px 20px;
+    margin: 0 15px;
+    background-color: #4237D1;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    background-color: #555; /* Efek hover */
+}
+
+/* PARAGRAF umum*/
+p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* buat About */
+.about {
+    background-color: #ffffff; /* Latar belakang berbeda */
+    padding: 40px;
+    border-radius: 10px; /* Sudut melengkung */
+    text-align: center; /* Menyejajarkan teks dan gambar */
+    display: block;
+    align-items: center; /* Vertikal sejajar */
+    justify-content: flex-start; /* Menempatkan konten di sisi kiri */
+    flex-wrap: wrap; /* Agar foto tidak keluar dari baris, jika terlalu banyak */
+    gap: 20px; /* Jarak antar gambar */
+}
+
+/* Gambar di About */
+.about img {
+    max-width: 20%; /* Membatasi lebar gambar supaya lebih kecil dan bisa sejajar */
+    margin: 7px; /* Menambahkan jarak antar gambar */
+    border-radius: 5px;
+}
+
+/* Judul di About */
+.about h2 {
+    text-align: left;
+    color: #4237D1;
+    font-size: 30px;
+}
+
+/* Paragraf di About */
+.about p {
+    color:#000000;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* Gaya untuk Projects */
+.projects {
+    background-color: #ffffff; /* Latar belakang putihhh */
+    padding: 40px;
+    border-radius: 10px; /* Sudut lengkung */
+    text-align: center; /* biar teks di tengah */
+}
+
+/* Judul di Projects */
+.projects h2 {
+    text-align: left;
+    color: #4237D1; /* Warna judul */
+    font-size: 36px;
+    margin-bottom: 20px; /* Jarak bawah dari judul */
+}
+.project h3 {
+    text-align: left;
+    color: #4237D1;
+}
+/* Deskripsi di Project */
+.project p {
+    text-align: justify; /* Teks rata kiri kanan */
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 20px; /* Jarak bawah dari deskripsi */
+}
+
+/* bagian project */
+.project {
+    display: block; 
+    text-align: left; /* Teks center */
+    margin-bottom: 40px; /* Jarak bawah antar projek */
+}
+
+/* Gambar di Project */
+.project img {
+    max-width: 20%; /* batas lebar gambar */
+    height: auto; /*proporsi gambar */
+    border-radius: 5px; /* Sudut melengkung */
+    margin-top: 10px; /* Jarak atas gambar */
+}
+
+/* gambar sejajar secara horizontal */
+.project-content {
+    display: flex; /* flex untuk gambar sejajar */
+    justify-content: center; /* Gambar sejajar ke tengah */
+    gap: 20px; /* Jarak antar gambar */
+}
+
+/* Gaya umum untuk kontak */
+.contact {
+    background-color: #cfe39b; /* Latar belakang putih */
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center; 
+    width: 70%; 
+    margin: 0 auto; /*Centering */
+}
+
+/* Judul di bagian kontak */
+.contact h2 {
+    font-size: 36px;
+    color: #333;
+}
+
+/* Paragraf di bagian kontak */
+.contact p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Bagian informasi kontak */
+.contact-info {
+    margin-bottom: 45px;
+}
+
+.contact-info a {
+    color: #d62d2d; /* Warna link */
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Efek garis saat kursor kena link*/
+}
+
+/* Formulir Kontak */
+form {
+    display: grid;
+    gap: 15px;
+    text-align: left;
+}
+
+form label {
+    font-size: 18px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+form textarea {
+    resize: vertical; /* kalo lebih dari 3 baris bisa ke bawah */
+}
+
+form button {
+    background-color: #4237D1;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    
+    font-size: 18px;
+}
+
+form button:hover {
+    background-color: #555;
+}
